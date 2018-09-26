@@ -1,0 +1,146 @@
+html{
+    box-sizing: content-box;
+    border: 0;
+    padding: 0;
+    background-color: bisque
+}
+
+.heading{
+    padding-top: 75px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+/* grid1 main body */
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: top;
+}
+
+.pic{
+    width: 100%;
+}
+
+/* grid2 top menu */
+
+.grid2{
+    background-color: hsla(16, 100%, 66%, .85); 
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.nav{
+    list-style: none;
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.nav a:hover{
+    background-color: chocolate;
+}
+
+.nav li{
+    display: inline-block;
+    padding-right: 3em;
+    font-size: 2em;
+}
+
+
+
+/* videos */
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 10px;
+}
+
+.video{
+    width: 100%;
+    height: 350px;
+}
+
+/* form */
+
+#form{
+    text-align: center;
+    padding: 10px;
+}
+
+.btn{
+    background-color: coral;
+    color: white;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+#email{
+    font-size: 1.5em;
+}
+ .formp{
+     text-align: center;
+     color: coral;
+     font-weight: bold;
+     font-size: 1.25em;
+ }
+
+@media only screen and (max-width: 635px){
+    .heading{
+        padding-top: 110px;   
+    }
+    .grid3{
+        grid-template-columns: 1fr;
+    }
+    .grid1{
+        grid-template-columns:  1fr;
+    }
+
+}
+
+@media only screen and (max-width: 485px){
+    .heading{
+        padding-top: 150px;   
+    }
+    
+
+}
+
+@media only screen and (max-width: 455px){
+    .heading{
+        padding-top: 190px;   
+    }
+    .grid1{
+        grid-template-columns:  1fr;
+    }
+    .video{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 331px){
+    .heading{
+        padding-top: 225px;   
+    }
+    .grid1{
+        grid-template-columns:  1fr;
+    }
+    .video{
+        width: 100%;
+        height: 200px;
+    }
+}
