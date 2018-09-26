@@ -107,7 +107,7 @@ html{
 
 @media only screen and (max-width: 635px){
     .heading{
-        padding-top: 110px;   
+        padding-top: 10px;   
     }
     .grid3{
         grid-template-columns: 1fr;
@@ -115,21 +115,14 @@ html{
     .grid1{
         grid-template-columns:  1fr;
     }
-
-}
-
-@media only screen and (max-width: 485px){
-    .heading{
-        padding-top: 150px;   
+    .grid2{
+        position: relative;
     }
-    
 
 }
 
 @media only screen and (max-width: 455px){
-    .heading{
-        padding-top: 190px;   
-    }
+  
     .grid1{
         grid-template-columns:  1fr;
     }
@@ -139,9 +132,7 @@ html{
     }
 }
 @media only screen and (max-width: 331px){
-    .heading{
-        padding-top: 225px;   
-    }
+   
     .grid1{
         grid-template-columns:  1fr;
     }
