@@ -74,6 +74,12 @@ html{
 
 /* form */
 
+.formdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
 #form{
     text-align: center;
     padding: 10px;
